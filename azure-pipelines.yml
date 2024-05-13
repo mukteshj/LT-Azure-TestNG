@@ -13,7 +13,7 @@ stages:
     steps:
       - task: configuration@1
         inputs:
-            connection: sunil-test
+            connection: vaneet-test
             #isTunnelActivate: true
             #tunnelOptions: '{"tunnelName": "ABC"}'
       - script: |
