@@ -21,8 +21,8 @@ public class TestNGTodo1 {
 
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
-        String username ="sunilr";
-        String authkey = "LtQPqIWXiN4kHjRSQ9juzDmQZV7tpbssbvyEJ13JPS4QfhGduU";
+        String username ="vaneetb";
+        String authkey = "yG4DwTFnDbAxdF9Wal2OrHOMHkp381uuKcq5hcCB2YpMIohtw4";
         String hub = "@hub.lambdatest.com/wd/hub";
         String file=System.getenv("LT_BUILD_NAME");
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -32,8 +32,8 @@ public class TestNGTodo1 {
         caps.setCapability("build_name",file);
         caps.setCapability("build",file);
         caps.setCapability("plugin", "git-testng");
-        caps.setCapability("tunnel",true);
-        caps.setCapability("tunnelName","ABC");
+       // caps.setCapability("tunnel",true);
+       // caps.setCapability("tunnelName","ABC");
 
         String[] Tags = new String[] { "Feature", "Falcon", "Severe" };
         caps.setCapability("tags", Tags);
