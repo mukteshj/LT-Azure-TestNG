@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  MylocalPool
+  azure_local_pool
   #vmImage: ubuntu-latest
   #MylocalPool
 
@@ -14,13 +14,13 @@ stages:
       - task: configuration@1
         inputs:
             connection: sunil-test
-            isTunnelActivate: true
-            tunnelOptions: '{"tunnelName": "ABC"}'
+            #isTunnelActivate: true
+            #tunnelOptions: '{"tunnelName": "ABC"}'
       - script: |
           mvn clean install -DskipTests
       - script: "mvn test -D suite=single.xml"
         displayName: "Command Line Script"
-# - task: LambdatestResults@1
+      - task: LambdatestResults@1
         
 # - stage: LambdatestResults
 #   jobs:
