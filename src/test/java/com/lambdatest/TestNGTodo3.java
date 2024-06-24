@@ -20,8 +20,8 @@ public class TestNGTodo3 {
 
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
-        String username ="ritamg";
-        String authkey ="TK7DCf2rFcBJzT3IHz4kD47lThhsHckrlGtiGkYyetAcixtrj5";
+        String username ="mukteshjlambdatest";
+        String authkey ="iWBEGiU5hryUeBId9ey1tiq0x9zunRSiLoIL6qC6ZnSbIrgEtJ";
         ;
         String hub = "@hub.lambdatest.com/wd/hub";
 
