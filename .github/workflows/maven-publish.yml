@@ -21,7 +21,9 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '11'
-        
+
+    - name: Setting up env
+      run: export LT_USERNAME=mukteshjlambdatest ; export LT_ACCESS_KEY=iWBEGiU5hryUeBId9ey1tiq0x9zunRSiLoIL6qC6ZnSbIrgEtJ 
     - name: Build with Maven
       run: mvn clean install -DskipTests
 
